@@ -1,0 +1,1285 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>溢出樱花动漫 | 官方视频平台 - 高清正版番剧与原创动画社区</title>
+<meta name="description" content="溢出樱花动漫官方网站，专注高清正版番剧、原创动画短片与二次元创作社区，为动漫爱好者提供专业、多元、值得信赖的内容生态与陪伴式观看体验。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f7c5d9'/%3E%3Ccircle cx='32' cy='30' r='14' fill='%23d94f7a'/%3E%3Ccircle cx='26' cy='28' r='3' fill='%23fff'/%3E%3Ccircle cx='38' cy='28' r='3' fill='%23fff'/%3E%3Cpath d='M24 38 Q32 46 40 38' stroke='%23fff' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3Cpath d='M46 10 C52 4 62 8 60 16 C58 22 50 24 46 10Z' fill='%23f2a8c0'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --yc-pink:#d94f7a;
+    --yc-pink-soft:#f7c5d9;
+    --yc-pink-pale:#fdf0f5;
+    --yc-ink:#2c2231;
+    --yc-ink-soft:#5b5062;
+    --yc-line:#e9d9e1;
+    --yc-white:#ffffff;
+    --yc-lilac:#8e7aa8;
+    --yc-gold:#c9a24a;
+    --yc-bg:#fbf6f9;
+    --yc-radius:18px;
+    --yc-shadow:0 10px 30px rgba(94,42,66,.10);
+    --yc-shadow-sm:0 4px 14px rgba(94,42,66,.08);
+    --yc-max:1180px;
+    --yc-head-h:116px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;scroll-padding-top:calc(var(--yc-head-h) + 12px);}
+  body{
+    margin:0;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+    color:var(--yc-ink);
+    background:
+      radial-gradient(1200px 520px at 88% -8%,rgba(247,197,217,.42),transparent 62%),
+      radial-gradient(900px 460px at -6% 22%,rgba(142,122,168,.14),transparent 60%),
+      var(--yc-bg);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3,h4{margin:0 0 .5em;line-height:1.32;font-weight:800;letter-spacing:.2px;}
+  p{margin:0 0 1em;}
+  ul{margin:0;padding:0;list-style:none;}
+  button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+  .yc-wrap{max-width:var(--yc-max);margin:0 auto;padding:0 22px;}
+  .yc-eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:12.5px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;
+    color:var(--yc-pink);background:var(--yc-pink-pale);
+    border:1px solid var(--yc-pink-soft);border-radius:999px;
+    padding:5px 14px;margin-bottom:14px;
+  }
+  .yc-eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--yc-pink);}
+  .yc-section{padding:62px 0 10px;}
+  .yc-section-head{margin-bottom:30px;max-width:760px;}
+  .yc-section-head h2{font-size:clamp(23px,3vw,32px);}
+  .yc-section-head p{color:var(--yc-ink-soft);margin:0;}
+
+  /* ============ S1 吸顶公告 + 页头 ============ */
+  .yc-sticky-top{position:sticky;top:0;z-index:80;}
+  .yc-announce{
+    background:linear-gradient(92deg,#3b2a40,#6b3b57 55%,#a44a70);
+    color:#fdeef4;font-size:13.5px;
+    padding:8px 0;
+  }
+  .yc-announce-inner{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+  .yc-announce-tag{
+    background:var(--yc-pink);color:#fff;font-weight:700;font-size:12px;
+    border-radius:6px;padding:2px 9px;letter-spacing:1px;white-space:nowrap;
+  }
+  .yc-announce-list{display:flex;gap:22px;flex-wrap:wrap;flex:1;min-width:0;}
+  .yc-announce-list a{opacity:.92;transition:opacity .2s;font-size:13.5px;}
+  .yc-announce-list a:hover{opacity:1;text-decoration:underline;text-underline-offset:4px;}
+  .yc-announce-date{opacity:.62;font-size:12px;white-space:nowrap;}
+  .yc-header{
+    background:rgba(255,252,254,.94);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--yc-line);
+    box-shadow:0 4px 18px rgba(94,42,66,.05);
+  }
+  .yc-header-inner{
+    display:flex;align-items:center;gap:26px;
+    padding:14px 22px;max-width:var(--yc-max);margin:0 auto;flex-wrap:wrap;
+  }
+  .yc-logo{display:flex;align-items:center;gap:11px;font-weight:900;font-size:19px;letter-spacing:.4px;}
+  .yc-logo-mark{
+    width:40px;height:40px;border-radius:13px;flex:0 0 auto;
+    background:linear-gradient(140deg,#f2a8c0,#d94f7a 62%,#8e7aa8);
+    display:grid;place-items:center;color:#fff;font-size:17px;
+    box-shadow:0 6px 16px rgba(217,79,122,.32);
+  }
+  .yc-logo small{display:block;font-size:10.5px;font-weight:600;letter-spacing:2px;color:var(--yc-lilac);line-height:1;}
+  .yc-nav{display:flex;gap:4px;flex-wrap:wrap;flex:1;}
+  .yc-nav a{
+    padding:8px 13px;border-radius:10px;font-size:14.5px;font-weight:600;color:var(--yc-ink-soft);
+    transition:.22s;
+  }
+  .yc-nav a:hover{background:var(--yc-pink-pale);color:var(--yc-pink);}
+  .yc-header-tools{display:flex;align-items:center;gap:10px;}
+  .yc-search{position:relative;display:flex;align-items:center;}
+  .yc-search input{
+    width:192px;border:1px solid var(--yc-line);background:#fff;border-radius:999px;
+    padding:9px 16px 9px 36px;font-size:13.5px;outline:none;transition:.24s;color:var(--yc-ink);
+  }
+  .yc-search input:focus{border-color:var(--yc-pink-soft);box-shadow:0 0 0 4px rgba(217,79,122,.12);width:222px;}
+  .yc-search svg{position:absolute;left:13px;width:15px;height:15px;stroke:var(--yc-lilac);fill:none;stroke-width:2;}
+  .yc-search-hint{
+    position:absolute;top:calc(100% + 8px);left:0;right:0;background:#fff;border:1px solid var(--yc-line);
+    border-radius:12px;box-shadow:var(--yc-shadow);padding:8px;font-size:13px;display:none;z-index:90;
+  }
+  .yc-search-hint.yc-on{display:block;}
+  .yc-search-hint b{color:var(--yc-pink);}
+  .yc-search-hint span{display:block;padding:6px 8px;border-radius:8px;color:var(--yc-ink-soft);}
+  .yc-search-hint span:hover{background:var(--yc-pink-pale);}
+  .yc-btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:7px;
+    border-radius:999px;padding:10px 22px;font-size:14px;font-weight:700;
+    transition:transform .2s,box-shadow .2s,background .2s;white-space:nowrap;
+  }
+  .yc-btn:active{transform:scale(.97);}
+  .yc-btn-primary{background:linear-gradient(135deg,#e0608a,#c33f68);color:#fff;box-shadow:0 8px 20px rgba(217,79,122,.30);}
+  .yc-btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(217,79,122,.36);}
+  .yc-btn-ghost{border:1.5px solid var(--yc-pink-soft);color:var(--yc-pink);background:#fff;}
+  .yc-btn-ghost:hover{background:var(--yc-pink-pale);}
+  .yc-burger{display:none;width:42px;height:42px;border-radius:12px;border:1px solid var(--yc-line);background:#fff;place-items:center;}
+  .yc-burger span{display:block;width:18px;height:2px;background:var(--yc-ink);border-radius:2px;position:relative;}
+  .yc-burger span::before,.yc-burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--yc-ink);border-radius:2px;}
+  .yc-burger span::before{top:-6px;}
+  .yc-burger span::after{top:6px;}
+
+  /* ============ S2 首屏：左文右侧大图 + 数据条 ============ */
+  .yc-hero{padding:50px 0 18px;position:relative;overflow:hidden;}
+  .yc-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:44px;align-items:center;}
+  .yc-hero h1{font-size:clamp(32px,5vw,58px);letter-spacing:-.5px;margin-bottom:16px;}
+  .yc-hero h1 em{
+    font-style:normal;color:var(--yc-pink);position:relative;display:inline-block;
+  }
+  .yc-hero h1 em::after{
+    content:"";position:absolute;left:0;right:0;bottom:4px;height:12px;
+    background:linear-gradient(90deg,rgba(247,197,217,.9),rgba(247,197,217,.15));border-radius:6px;z-index:-1;
+  }
+  .yc-hero-lead{font-size:16.5px;color:var(--yc-ink-soft);max-width:540px;margin-bottom:20px;}
+  .yc-hero-intro{
+    background:#fff;border:1px solid var(--yc-line);border-left:4px solid var(--yc-pink);
+    border-radius:0 var(--yc-radius) var(--yc-radius) 0;padding:16px 20px;font-size:14.5px;
+    color:var(--yc-ink-soft);margin-bottom:24px;box-shadow:var(--yc-shadow-sm);
+  }
+  .yc-hero-intro b{color:var(--yc-ink);}
+  .yc-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px;}
+  .yc-hero-stats{
+    display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;
+    border-top:1px dashed var(--yc-line);padding-top:20px;
+  }
+  .yc-hero-stats strong{display:block;font-size:clamp(20px,2.4vw,27px);font-weight:900;color:var(--yc-ink);line-height:1.2;}
+  .yc-hero-stats strong i{font-style:normal;font-size:13px;color:var(--yc-pink);font-weight:700;margin-left:2px;}
+  .yc-hero-stats span{font-size:12.5px;color:var(--yc-ink-soft);}
+  .yc-hero-art{position:relative;}
+  .yc-hero-art-frame{
+    border-radius:26px;overflow:hidden;box-shadow:var(--yc-shadow);border:1px solid #fff;
+    background:#fff;transform:rotate(.6deg);transition:transform .5s;
+  }
+  .yc-hero-art:hover .yc-hero-art-frame{transform:rotate(0deg) translateY(-4px);}
+  .yc-hero-art-frame img{width:100%;aspect-ratio:16/11;object-fit:cover;}
+  .yc-hero-badge{
+    position:absolute;left:-14px;bottom:26px;background:#fff;border:1px solid var(--yc-line);
+    border-radius:14px;padding:11px 16px;box-shadow:var(--yc-shadow);display:flex;gap:10px;align-items:center;
+  }
+  .yc-hero-badge b{font-size:19px;color:var(--yc-pink);}
+  .yc-hero-badge span{font-size:12px;color:var(--yc-ink-soft);line-height:1.4;}
+  .yc-hero-badge span small{display:block;font-size:11px;opacity:.7;}
+
+  /* ============ 通用卡片 ============ */
+  .yc-card{background:#fff;border:1px solid var(--yc-line);border-radius:var(--yc-radius);box-shadow:var(--yc-shadow-sm);}
+  .yc-tag{
+    display:inline-block;font-size:11.5px;font-weight:700;color:var(--yc-pink);
+    background:var(--yc-pink-pale);border-radius:999px;padding:2px 10px;margin-right:6px;
+  }
+  .yc-tag-alt{color:#5d4a76;background:#f0ebf7;}
+  .yc-tag-gold{color:#8a6a1f;background:#faf1d9;}
+
+  /* ============ S3 热门视频流（三列等高卡片 + 文字列表） ============ */
+  .yc-video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;}
+  .yc-video-card{
+    background:#fff;border:1px solid var(--yc-line);border-radius:var(--yc-radius);overflow:hidden;
+    box-shadow:var(--yc-shadow-sm);display:flex;flex-direction:column;
+    transition:transform .26s,box-shadow .26s;
+  }
+  .yc-video-card:hover{transform:translateY(-6px);box-shadow:var(--yc-shadow);}
+  .yc-video-cover{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--yc-pink-pale);}
+  .yc-video-cover img{width:100%;height:100%;object-fit:cover;transition:transform .5s;}
+  .yc-video-card:hover .yc-video-cover img{transform:scale(1.05);}
+  .yc-video-play{
+    position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(180deg,rgba(44,34,49,0) 40%,rgba(44,34,49,.42));
+  }
+  .yc-video-play i{
+    width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.92);
+    display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.2);transition:transform .25s;
+  }
+  .yc-video-play i::before{content:"";border-style:solid;border-width:8px 0 8px 13px;border-color:transparent transparent transparent var(--yc-pink);margin-left:3px;}
+  .yc-video-card:hover .yc-video-play i{transform:scale(1.12);}
+  .yc-video-dur{position:absolute;right:10px;bottom:10px;background:rgba(44,34,49,.78);color:#fff;font-size:11.5px;border-radius:6px;padding:1px 7px;}
+  .yc-video-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:9px;flex:1;}
+  .yc-video-body h3{font-size:16.5px;margin:0;}
+  .yc-video-body p{font-size:13.5px;color:var(--yc-ink-soft);margin:0;}
+  .yc-video-meta{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#9a8fa2;gap:8px;flex-wrap:wrap;}
+  .yc-video-meta .yc-author-name{color:var(--yc-lilac);font-weight:700;}
+  .yc-video-ops{display:flex;gap:8px;align-items:center;border-top:1px dashed var(--yc-line);padding-top:11px;margin-top:auto;}
+  .yc-op{
+    display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:#8b7f93;
+    border:1px solid var(--yc-line);border-radius:999px;padding:4px 11px;transition:.2s;background:#fff;
+  }
+  .yc-op:hover{border-color:var(--yc-pink-soft);color:var(--yc-pink);background:var(--yc-pink-pale);}
+  .yc-op.yc-liked{color:#fff;background:var(--yc-pink);border-color:var(--yc-pink);}
+  .yc-op svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2;}
+  .yc-op.yc-liked svg{fill:currentColor;}
+
+  .yc-video-list{margin-top:26px;display:grid;gap:12px;}
+  .yc-vl-item{
+    background:#fff;border:1px solid var(--yc-line);border-radius:14px;padding:14px 20px;
+    display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:16px;align-items:center;
+    transition:.22s;
+  }
+  .yc-vl-item:hover{border-color:var(--yc-pink-soft);transform:translateX(4px);box-shadow:var(--yc-shadow-sm);}
+  .yc-vl-index{font-size:19px;font-weight:900;color:var(--yc-pink-soft);font-style:italic;}
+  .yc-vl-main h3{font-size:15px;margin:0 0 2px;}
+  .yc-vl-main p{font-size:12.8px;color:var(--yc-ink-soft);margin:0;}
+  .yc-vl-side{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end;}
+
+  /* ============ S4 专题企划（图文交替） ============ */
+  .yc-special{display:grid;gap:22px;}
+  .yc-special-hero{
+    display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:0;overflow:hidden;
+    border-radius:22px;background:#fff;border:1px solid var(--yc-line);box-shadow:var(--yc-shadow-sm);
+  }
+  .yc-special-hero img{width:100%;height:100%;min-height:250px;object-fit:cover;}
+  .yc-special-hero-body{padding:28px 30px;}
+  .yc-special-hero-body h3{font-size:22px;}
+  .yc-status{
+    display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;
+    color:#2f7d5a;background:#e8f6ee;border-radius:999px;padding:2px 11px;margin-bottom:10px;
+  }
+  .yc-status::before{content:"";width:6px;height:6px;border-radius:50%;background:#38a173;animation:ycPulse 1.8s infinite;}
+  @keyframes ycPulse{0%,100%{opacity:1;}50%{opacity:.3;}}
+  .yc-special-episodes{margin-top:14px;border-top:1px dashed var(--yc-line);padding-top:12px;display:grid;gap:8px;}
+  .yc-special-episodes li{font-size:13.5px;color:var(--yc-ink-soft);display:flex;gap:9px;}
+  .yc-special-episodes li b{color:var(--yc-pink);font-size:12.5px;flex:0 0 auto;}
+  .yc-special-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
+  .yc-special-mini{background:#fff;border:1px solid var(--yc-line);border-radius:16px;padding:20px 22px;box-shadow:var(--yc-shadow-sm);transition:.24s;}
+  .yc-special-mini:hover{transform:translateY(-4px);box-shadow:var(--yc-shadow);}
+  .yc-special-mini h3{font-size:16.5px;}
+  .yc-special-mini p{font-size:13.5px;color:var(--yc-ink-soft);margin-bottom:10px;}
+  .yc-special-mini ul{display:grid;gap:5px;}
+  .yc-special-mini li{font-size:13px;color:#7a6d82;}
+  .yc-special-mini li::before{content:"▸";color:var(--yc-pink-soft);margin-right:7px;}
+
+  /* ============ 深度解析 800+ ============ */
+  .yc-essay{
+    background:#fff;border:1px solid var(--yc-line);border-radius:22px;padding:34px 38px;
+    box-shadow:var(--yc-shadow-sm);position:relative;overflow:hidden;
+  }
+  .yc-essay::before{
+    content:"";position:absolute;top:0;left:0;width:100%;height:5px;
+    background:linear-gradient(90deg,var(--yc-pink),#f2a8c0 45%,var(--yc-lilac));
+  }
+  .yc-essay h2{font-size:clamp(21px,2.6vw,28px);margin-bottom:8px;}
+  .yc-essay-deck{color:var(--yc-ink-soft);font-size:14.5px;margin-bottom:24px;}
+  .yc-essay-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 36px;}
+  .yc-essay-grid h3{font-size:16.5px;color:#4a3357;display:flex;align-items:center;gap:9px;margin-bottom:8px;}
+  .yc-essay-grid h3::before{
+    content:"";width:9px;height:9px;border-radius:3px;flex:0 0 auto;
+    background:linear-gradient(135deg,var(--yc-pink),var(--yc-lilac));transform:rotate(45deg);
+  }
+  .yc-essay-grid p{font-size:14px;color:#5f5466;text-align:justify;}
+  .yc-essay-quote{
+    grid-column:1/-1;border-left:4px solid var(--yc-pink-soft);background:var(--yc-pink-pale);
+    border-radius:0 14px 14px 0;padding:16px 22px;font-size:14.5px;color:#6b4a5d;
+  }
+
+  /* ============ S5 作者矩阵（双列简介） ============ */
+  .yc-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;}
+  .yc-author{
+    background:#fff;border:1px solid var(--yc-line);border-radius:18px;padding:22px;
+    display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;box-shadow:var(--yc-shadow-sm);
+    transition:.24s;
+  }
+  .yc-author:hover{transform:translateY(-4px);box-shadow:var(--yc-shadow);border-color:var(--yc-pink-soft);}
+  .yc-avatar{
+    width:64px;height:64px;border-radius:50%;display:grid;place-items:center;
+    font-size:22px;font-weight:900;color:#fff;flex:0 0 auto;
+    box-shadow:0 6px 16px rgba(94,42,66,.18);
+  }
+  .yc-avatar-1{background:linear-gradient(140deg,#f2a8c0,#c33f68);}
+  .yc-avatar-2{background:linear-gradient(140deg,#a99bd0,#6d5a92);}
+  .yc-avatar-3{background:linear-gradient(140deg,#f7c98b,#d18f36);}
+  .yc-avatar-4{background:linear-gradient(140deg,#8ed1c4,#3e8f81);}
+  .yc-avatar-5{background:linear-gradient(140deg,#9fb9e8,#4b6aa8);}
+  .yc-author-info h3{font-size:16.5px;margin:0 0 3px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  .yc-author-role{font-size:11.5px;font-weight:700;color:var(--yc-pink);background:var(--yc-pink-pale);border-radius:999px;padding:1px 9px;}
+  .yc-author-stats{font-size:12.5px;color:#8b7f93;margin-bottom:7px;display:flex;gap:14px;flex-wrap:wrap;}
+  .yc-author-stats b{color:var(--yc-ink);}
+  .yc-author-info p{font-size:13.2px;color:var(--yc-ink-soft);margin:0 0 10px;}
+  .yc-link-more{font-size:12.5px;font-weight:700;color:var(--yc-pink);}
+
+  /* ============ S6 口碑（引用摘录 + 评分摘要） ============ */
+  .yc-review-stats{
+    display:grid;grid-template-columns:200px minmax(0,1fr);gap:26px;align-items:center;
+    background:#fff;border:1px solid var(--yc-line);border-radius:20px;padding:24px 28px;
+    box-shadow:var(--yc-shadow-sm);margin-bottom:22px;
+  }
+  .yc-score{text-align:center;border-right:1px dashed var(--yc-line);padding-right:20px;}
+  .yc-score b{font-size:46px;font-weight:900;color:var(--yc-pink);line-height:1;}
+  .yc-score small{color:#9a8fa2;font-size:13px;display:block;margin-top:5px;}
+  .yc-score-stars{color:var(--yc-gold);font-size:15px;letter-spacing:2px;margin-top:6px;}
+  .yc-bar-row{display:grid;grid-template-columns:52px minmax(0,1fr) 42px;gap:10px;align-items:center;font-size:12.5px;color:#8b7f93;margin-bottom:7px;}
+  .yc-bar{height:7px;border-radius:99px;background:var(--yc-pink-pale);overflow:hidden;}
+  .yc-bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#f2a8c0,var(--yc-pink));}
+  .yc-review-list{display:grid;gap:16px;}
+  .yc-review-quote{
+    background:#fff;border:1px solid var(--yc-line);border-radius:16px;padding:20px 24px;
+    box-shadow:var(--yc-shadow-sm);position:relative;
+  }
+  .yc-review-quote::before{
+    content:"“";position:absolute;top:6px;right:20px;font-size:56px;line-height:1;
+    color:var(--yc-pink-soft);font-family:Georgia,serif;
+  }
+  .yc-review-quote p{font-size:14.2px;margin:0 0 12px;color:#4f4457;position:relative;}
+  .yc-review-quote footer{display:flex;align-items:center;gap:10px;font-size:12.5px;color:#8b7f93;flex-wrap:wrap;}
+  .yc-review-quote footer .yc-avatar{width:32px;height:32px;font-size:13px;box-shadow:none;}
+  .yc-review-quote footer b{color:var(--yc-ink);}
+  .yc-review-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}
+
+  /* ============ S7 辅助：企业动态 + 合作 + FAQ ============ */
+  .yc-aux-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start;}
+  .yc-panel{background:#fff;border:1px solid var(--yc-line);border-radius:20px;padding:26px 28px;box-shadow:var(--yc-shadow-sm);}
+  .yc-panel h3{font-size:18px;display:flex;align-items:center;gap:9px;margin-bottom:16px;}
+  .yc-panel h3::after{content:"";flex:1;height:1px;background:var(--yc-line);}
+  .yc-news{display:grid;gap:14px;}
+  .yc-news li{display:grid;grid-template-columns:70px minmax(0,1fr);gap:14px;padding-bottom:13px;border-bottom:1px dashed var(--yc-line);}
+  .yc-news li:last-child{border-bottom:0;padding-bottom:0;}
+  .yc-news time{font-size:12px;font-weight:700;color:var(--yc-pink);padding-top:2px;}
+  .yc-news b{display:block;font-size:14px;margin-bottom:2px;}
+  .yc-news span{font-size:12.8px;color:var(--yc-ink-soft);}
+  .yc-partners{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+  .yc-partner{
+    border:1px dashed var(--yc-line);border-radius:12px;padding:14px;text-align:center;
+    font-size:13px;font-weight:700;color:#6a5d73;background:var(--yc-bg);transition:.2s;
+  }
+  .yc-partner:hover{border-color:var(--yc-pink-soft);color:var(--yc-pink);background:var(--yc-pink-pale);}
+  .yc-partner small{display:block;font-weight:500;font-size:11.5px;color:#9a8fa2;margin-top:2px;}
+  .yc-faq{display:grid;gap:9px;}
+  .yc-faq details{border:1px solid var(--yc-line);border-radius:12px;padding:0 16px;background:#fff;transition:.2s;}
+  .yc-faq details[open]{border-color:var(--yc-pink-soft);background:var(--yc-pink-pale);}
+  .yc-faq summary{
+    cursor:pointer;list-style:none;font-size:14px;font-weight:700;padding:13px 0;
+    display:flex;justify-content:space-between;align-items:center;gap:12px;
+  }
+  .yc-faq summary::-webkit-details-marker{display:none;}
+  .yc-faq summary::after{content:"+";color:var(--yc-pink);font-size:18px;font-weight:400;transition:.2s;}
+  .yc-faq details[open] summary::after{transform:rotate(45deg);}
+  .yc-faq p{font-size:13.3px;color:var(--yc-ink-soft);margin:0 0 14px;}
+
+  /* ============ 投稿/CTA ============ */
+  .yc-cta{
+    margin-top:52px;border-radius:24px;padding:38px 40px;color:#fff;
+    background:
+      radial-gradient(500px 200px at 88% 0%,rgba(247,197,217,.32),transparent 60%),
+      linear-gradient(118deg,#3b2a40,#6b3b57 58%,#a44a70);
+    display:grid;grid-template-columns:minmax(0,1fr) auto;gap:26px;align-items:center;
+    box-shadow:0 18px 44px rgba(94,42,66,.24);
+  }
+  .yc-cta h2{font-size:clamp(21px,2.6vw,27px);margin-bottom:8px;}
+  .yc-cta p{font-size:14px;opacity:.86;margin:0;max-width:620px;}
+  .yc-cta-actions{display:flex;gap:12px;flex-wrap:wrap;}
+  .yc-cta .yc-btn-primary{background:#fff;color:#a03660;}
+  .yc-cta .yc-btn-ghost{background:transparent;border-color:rgba(255,255,255,.5);color:#fff;}
+  .yc-cta .yc-btn-ghost:hover{background:rgba(255,255,255,.14);}
+
+  /* ============ S8 页脚 ============ */
+  .yc-footer{margin-top:64px;background:#2b1f31;color:#c9bccc;padding:52px 0 24px;}
+  .yc-footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px;}
+  .yc-footer h4{color:#fff;font-size:14.5px;margin-bottom:14px;letter-spacing:.5px;}
+  .yc-footer p,.yc-footer li{font-size:13px;line-height:1.9;color:#a999ae;}
+  .yc-footer li a:hover{color:var(--yc-pink-soft);}
+  .yc-footer-brand{display:flex;align-items:center;gap:11px;margin-bottom:14px;color:#fff;font-weight:900;font-size:18px;}
+  .yc-footer-bottom{
+    margin-top:36px;border-top:1px solid rgba(255,255,255,.1);padding-top:20px;
+    display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:#8d7f92;
+  }
+  .yc-footer-bottom a:hover{color:var(--yc-pink-soft);}
+
+  /* ============ 弹窗 & Toast & 回顶 ============ */
+  .yc-modal-mask{
+    position:fixed;inset:0;background:rgba(35,24,42,.55);backdrop-filter:blur(4px);
+    display:none;place-items:center;z-index:200;padding:20px;
+  }
+  .yc-modal-mask.yc-on{display:grid;}
+  .yc-modal{
+    background:#fff;border-radius:22px;max-width:520px;width:100%;padding:30px 32px;
+    box-shadow:0 30px 70px rgba(0,0,0,.3);position:relative;animation:ycPop .26s ease;
+    max-height:86vh;overflow:auto;
+  }
+  @keyframes ycPop{from{opacity:0;transform:translateY(14px) scale(.97);}to{opacity:1;transform:none;}}
+  .yc-modal-close{position:absolute;top:14px;right:16px;font-size:22px;color:#a999ae;line-height:1;}
+  .yc-modal h3{font-size:19px;margin-bottom:12px;padding-right:24px;}
+  .yc-modal p{font-size:14px;color:var(--yc-ink-soft);}
+  .yc-field{margin-bottom:14px;}
+  .yc-field label{display:block;font-size:13px;font-weight:700;margin-bottom:5px;}
+  .yc-field input,.yc-field textarea,.yc-field select{
+    width:100%;border:1px solid var(--yc-line);border-radius:10px;padding:10px 13px;
+    font-size:13.5px;font-family:inherit;outline:none;transition:.2s;background:#fff;color:var(--yc-ink);
+  }
+  .yc-field input:focus,.yc-field textarea:focus,.yc-field select:focus{border-color:var(--yc-pink-soft);box-shadow:0 0 0 3px rgba(217,79,122,.12);}
+  .yc-toast{
+    position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+    background:#2b1f31;color:#fff;font-size:13.5px;padding:11px 22px;border-radius:999px;
+    box-shadow:0 12px 30px rgba(0,0,0,.28);opacity:0;pointer-events:none;transition:.28s;z-index:300;
+  }
+  .yc-toast.yc-on{opacity:1;transform:translate(-50%,0);}
+  .yc-top{
+    position:fixed;right:24px;bottom:26px;width:46px;height:46px;border-radius:50%;
+    background:#fff;border:1px solid var(--yc-line);box-shadow:var(--yc-shadow);
+    display:grid;place-items:center;color:var(--yc-pink);z-index:120;
+    opacity:0;pointer-events:none;transition:.26s;
+  }
+  .yc-top.yc-on{opacity:1;pointer-events:auto;}
+  .yc-top:hover{transform:translateY(-3px);}
+
+  /* ============ 响应式 ============ */
+  @media (max-width:1000px){
+    .yc-hero-grid{grid-template-columns:1fr;gap:30px;}
+    .yc-video-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+    .yc-footer-grid{grid-template-columns:1fr 1fr;}
+    .yc-essay-grid{grid-template-columns:1fr;gap:18px;}
+    .yc-cta{grid-template-columns:1fr;}
+  }
+  @media (max-width:820px){
+    .yc-burger{display:grid;}
+    .yc-nav{
+      display:none;order:5;width:100%;flex-direction:column;gap:2px;
+      border-top:1px solid var(--yc-line);padding-top:10px;
+    }
+    .yc-nav.yc-open{display:flex;}
+    .yc-header-inner{gap:14px;}
+    .yc-header-tools{margin-left:auto;}
+    .yc-search input{width:150px;}
+    .yc-search input:focus{width:170px;}
+    .yc-announce-list{gap:14px;}
+    .yc-special-hero{grid-template-columns:1fr;}
+    .yc-special-row{grid-template-columns:1fr;}
+    .yc-author-grid,.yc-review-cols,.yc-aux-grid{grid-template-columns:1fr;}
+    .yc-review-stats{grid-template-columns:1fr;}
+    .yc-score{border-right:0;border-bottom:1px dashed var(--yc-line);padding:0 0 16px;}
+    .yc-essay{padding:26px 22px;}
+    .yc-cta{padding:28px 24px;}
+    .yc-vl-item{grid-template-columns:28px minmax(0,1fr);}
+    .yc-vl-side{grid-column:1/-1;justify-content:flex-start;}
+  }
+  @media (max-width:560px){
+    .yc-video-grid{grid-template-columns:1fr;}
+    .yc-author{grid-template-columns:52px minmax(0,1fr);gap:13px;padding:18px;}
+    .yc-avatar{width:52px;height:52px;font-size:18px;}
+    .yc-hero-stats{grid-template-columns:1fr 1fr;}
+    .yc-hero-badge{left:8px;bottom:12px;}
+    .yc-footer-grid{grid-template-columns:1fr;}
+    .yc-partners{grid-template-columns:1fr;}
+    .yc-search{display:none;}
+  }
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ================= S1 吸顶：公告条 + 页头 ================= -->
+<div class="yc-sticky-top">
+  <div class="yc-announce">
+    <div class="yc-wrap yc-announce-inner">
+      <span class="yc-announce-tag">官方发布</span>
+      <div class="yc-announce-list">
+        <a href="#special">《樱花落处》第二季 第 9 话 11 月 21 日 20:00 上线</a>
+        <a href="#videos">冬季新番抢先看专题开放预约</a>
+        <a href="#authors">「拾光」创作者扶持计划第 4 期报名中</a>
+      </div>
+      <span class="yc-announce-date">2026.11.22 更新</span>
+    </div>
+  </div>
+
+  <header class="yc-header">
+    <div class="yc-header-inner">
+      <a class="yc-logo" href="#hero">
+        <span class="yc-logo-mark">樱</span>
+        <span>溢出樱花动漫<small>OVERFLOW SAKURA</small></span>
+      </a>
+      <nav class="yc-nav" id="ycNav" aria-label="主导航">
+        <a href="#hero">首页</a>
+        <a href="#videos">热门视频</a>
+        <a href="#special">专题企划</a>
+        <a href="#essay">品牌解析</a>
+        <a href="#authors">创作者</a>
+        <a href="#reviews">用户口碑</a>
+        <a href="#aux">动态与帮助</a>
+      </nav>
+      <div class="yc-header-tools">
+        <div class="yc-search">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 21 21"/></svg>
+          <input type="search" id="ycSearch" placeholder="搜索番剧 / 创作者 / 专题" aria-label="站内搜索">
+          <div class="yc-search-hint" id="ycSearchHint"></div>
+        </div>
+        <button class="yc-btn yc-btn-primary" data-modal="submit">投稿入口</button>
+        <button class="yc-burger" id="ycBurger" aria-label="展开导航" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main>
+
+  <!-- ================= S2 首屏 ================= -->
+  <section class="yc-hero" id="hero">
+    <div class="yc-wrap yc-hero-grid">
+      <div class="yc-hero-text">
+        <span class="yc-eyebrow">官方网站 · 高清正版 · 原创社区</span>
+        <h1>溢出樱花动漫</h1>
+        <p class="yc-hero-lead">让每一部好番都被认真对待，也让每一位创作者的热爱有处安放。</p>
+        <div class="yc-hero-intro">
+          作为深耕二次元垂直领域的视频品牌，<b>溢出樱花动漫官网</b>持续运营高清正版番剧、原创动画短片与创作者社区。我们以企业级内容标准与匠心的选片流程，为观众提供值得信赖的观看体验，为创作者搭建多元、包容、真实的成长平台，让精品内容与社区活力彼此成就。
+        </div>
+        <div class="yc-hero-actions">
+          <a class="yc-btn yc-btn-primary" href="#videos">立即观看</a>
+          <a class="yc-btn yc-btn-ghost" href="#special">查看专题企划</a>
+          <button class="yc-btn yc-btn-ghost" data-modal="submit">我要投稿</button>
+        </div>
+        <div class="yc-hero-stats">
+          <div><strong data-count="12800">12,800<i>+</i></strong><span>小时高清正版片库</span></div>
+          <div><strong data-count="2360">2,360<i>位</i></strong><span>签约与入驻创作者</span></div>
+          <div><strong data-count="412">412<i>万</i></strong><span>月度活跃社区用户</span></div>
+        </div>
+      </div>
+      <div class="yc-hero-art">
+        <div class="yc-hero-art-frame">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 550'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%232e2340'/%3E%3Cstop offset='.55' stop-color='%238e5a7a'/%3E%3Cstop offset='1' stop-color='%23f2b8c8'/%3E%3C/linearGradient%3E%3ClinearGradient id='hill' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234a3357'/%3E%3Cstop offset='1' stop-color='%23241a2e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='550' fill='url(%23sky)'/%3E%3Ccircle cx='620' cy='130' r='78' fill='%23fde8ef' opacity='.9'/%3E%3Ccircle cx='620' cy='130' r='120' fill='%23fde8ef' opacity='.14'/%3E%3Cpath d='M0 430 Q160 320 330 400 T800 360 L800 550 L0 550Z' fill='url(%23hill)'/%3E%3Cpath d='M0 480 Q220 400 420 470 T800 440 L800 550 L0 550Z' fill='%231b1324' opacity='.85'/%3E%3Cg fill='%23ffd5e2' opacity='.92'%3E%3Ccircle cx='150' cy='180' r='7'/%3E%3Ccircle cx='210' cy='120' r='4'/%3E%3Ccircle cx='300' cy='210' r='6'/%3E%3Ccircle cx='420' cy='110' r='5'/%3E%3Ccircle cx='480' cy='220' r='8'/%3E%3Ccircle cx='660' cy='260' r='6'/%3E%3Ccircle cx='740' cy='180' r='4'/%3E%3Ccircle cx='90' cy='300' r='5'/%3E%3C/g%3E%3Cg stroke='%23c68aa4' stroke-width='3' fill='none' opacity='.8'%3E%3Cpath d='M240 350 q40 -60 -10 -110'/%3E%3Cpath d='M240 350 q-50 -50 -14 -110'/%3E%3Cpath d='M240 350 q70 -30 34 -80'/%3E%3C/g%3E%3Cg fill='%23f7c5d9'%3E%3Cpath d='M226 250 q20 -22 36 -4 q-14 22 -36 4z'/%3E%3Cpath d='M214 246 q-18 -22 -34 -2 q12 22 34 2z'/%3E%3Cpath d='M262 268 q22 -14 30 6 q-18 16 -30 -6z'/%3E%3C/g%3E%3Cg opacity='.75' fill='%23ffffff'%3E%3Ctext x='72' y='492' font-family='sans-serif' font-size='26' font-weight='bold' letter-spacing='7'%3EOVERFLOW SAKURA%3C/text%3E%3C/g%3E%3C/svg%3E" alt="溢出樱花动漫官网页首主视觉：黄昏山坡上樱花飘落的原创动画场景" width="800" height="550">
+        </div>
+        <div class="yc-hero-badge">
+          <b>9.6</b>
+          <span>《樱花落处》第二季<small>站内口碑评分 · 12.6 万人参与</small></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= S3 热门视频流 ================= -->
+  <section class="yc-section" id="videos">
+    <div class="yc-wrap">
+      <div class="yc-section-head">
+        <span class="yc-eyebrow">精品内容 · 今日热门</span>
+        <h2>正在被反复观看的番剧与短片</h2>
+        <p>由编辑部与社区共同筛选，我们只把真正值得二刷的高清内容放进热门位。每一条都附有创作者署名与真实互动数据。</p>
+      </div>
+
+      <div class="yc-video-grid">
+        <article class="yc-video-card">
+          <div class="yc-video-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='a1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fbe3ec'/%3E%3Cstop offset='1' stop-color='%23c98aa8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23a1)'/%3E%3Cg fill='%23fff' opacity='.6'%3E%3Ccircle cx='80' cy='52' r='24'/%3E%3Ccircle cx='400' cy='210' r='34'/%3E%3C/g%3E%3Cpath d='M0 220 Q120 160 240 205 T480 185 L480 270 L0 270Z' fill='%237a4a66' opacity='.7'/%3E%3Cg%3E%3Ccircle cx='240' cy='128' r='42' fill='%23fff4f8'/%3E%3Cpath d='M240 88 q26 20 26 42 a26 26 0 0 1 -52 0 q0 -22 26 -42z' fill='%23e0608a'/%3E%3Ccircle cx='222' cy='126' r='5' fill='%23fff'/%3E%3Ccircle cx='258' cy='126' r='5' fill='%23fff'/%3E%3Cpath d='M226 146 q14 12 28 0' stroke='%23fff' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/g%3E%3C/svg%3E" alt="《樱花落处》第二季第 9 话少女剪影封面" width="480" height="270">
+            <div class="yc-video-play"><i></i></div>
+            <span class="yc-video-dur">24:10</span>
+          </div>
+          <div class="yc-video-body">
+            <div><span class="yc-tag">正版番剧</span><span class="yc-tag yc-tag-alt">更新中</span></div>
+            <h3>《樱花落处》第二季 · 第 9 话 归途的风</h3>
+            <p>离别之后的第一个春天，主角在旧校舍顶楼重新听见那首歌。全片以雨声铺底，情绪推进克制却有力。</p>
+            <div class="yc-video-meta">
+              <span class="yc-author-name">@樱井拾光</span>
+              <span>播放 86.4万 · 点赞 5.2万</span>
+            </div>
+            <div class="yc-video-ops">
+              <button class="yc-op yc-like" data-liked="false"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.4A4.1 4.1 0 0 1 12 7.6 4.1 4.1 0 0 1 19 10.6C19 15.4 12 20 12 20z"/></svg><span>点赞</span></button>
+              <button class="yc-op yc-fav" data-faved="false"><svg viewBox="0 0 24 24"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>收藏</span></button>
+              <button class="yc-op yc-share" data-title="《樱花落处》第二季 第 9 话 归途的风"><svg viewBox="0 0 24 24"><path d="M4 12v7h16v-7"/><path d="M12 16V4"/><path d="m8 8 4-4 4 4"/></svg><span>分享</span></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="yc-video-card">
+          <div class="yc-video-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23262b45'/%3E%3Cg opacity='.9'%3E%3Ccircle cx='120' cy='70' r='3' fill='%2386b7ff'/%3E%3Ccircle cx='300' cy='44' r='2' fill='%23fff'/%3E%3Ccircle cx='400' cy='110' r='3' fill='%23ffd7e6'/%3E%3Ccircle cx='200' cy='120' r='2' fill='%23fff'/%3E%3C/g%3E%3Cpath d='M0 270 L0 190 Q120 140 240 188 T480 160 L480 270Z' fill='%23161a30'/%3E%3Crect x='170' y='150' width='140' height='90' rx='8' fill='%233e4a78'/%3E%3Crect x='184' y='164' width='112' height='52' rx='5' fill='%237fd8e8' opacity='.8'/%3E%3Cpath d='M240 60 l30 40 h-60z' fill='%23ffd7e6'/%3E%3C/svg%3E" alt="科幻原创短片《零点之后》城市夜景飞船剪影封面" width="480" height="270">
+            <div class="yc-video-play"><i></i></div>
+            <span class="yc-video-dur">12:38</span>
+          </div>
+          <div class="yc-video-body">
+            <div><span class="yc-tag">原创短片</span><span class="yc-tag yc-tag-gold">编辑推荐</span></div>
+            <h3>原创动画《零点之后》：一座城市的三次停电</h3>
+            <p>独立团队历时十一个月完成的科幻短片，用三次停电串起普通人的微小善意。赛璐璐与手绘质感并行，是今年社区口碑黑马。</p>
+            <div class="yc-video-meta">
+              <span class="yc-author-name">@零号放映室</span>
+              <span>播放 43.1万 · 点赞 3.9万</span>
+            </div>
+            <div class="yc-video-ops">
+              <button class="yc-op yc-like" data-liked="false"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.4A4.1 4.1 0 0 1 12 7.6 4.1 4.1 0 0 1 19 10.6C19 15.4 12 20 12 20z"/></svg><span>点赞</span></button>
+              <button class="yc-op yc-fav" data-faved="false"><svg viewBox="0 0 24 24"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>收藏</span></button>
+              <button class="yc-op yc-share" data-title="原创动画《零点之后》：一座城市的三次停电"><svg viewBox="0 0 24 24"><path d="M4 12v7h16v-7"/><path d="M12 16V4"/><path d="m8 8 4-4 4 4"/></svg><span>分享</span></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="yc-video-card">
+          <div class="yc-video-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23f7efdf'/%3E%3Crect y='180' width='480' height='90' fill='%238e6b4a' opacity='.22'/%3E%3Cg%3E%3Crect x='90' y='96' width='120' height='84' rx='6' fill='%23e8c9a0'/%3E%3Crect x='104' y='112' width='92' height='40' rx='4' fill='%238e6b4a'/%3E%3Crect x='250' y='80' width='70' height='100' rx='6' fill='%23d9b98f'/%3E%3Crect x='264' y='96' width='42' height='28' rx='3' fill='%236b4a33'/%3E%3Ccircle cx='390' cy='120' r='36' fill='%23e0608a' opacity='.75'/%3E%3Cpath d='M366 120 q24 -26 48 0 q-24 26 -48 0z' fill='%23fff6fa'/%3E%3C/g%3E%3C/svg%3E" alt="动画制作幕后工作台与色卡手稿封面" width="480" height="270">
+            <div class="yc-video-play"><i></i></div>
+            <span class="yc-video-dur">18:05</span>
+          </div>
+          <div class="yc-video-body">
+            <div><span class="yc-tag">创作幕后</span><span class="yc-tag yc-tag-alt">教程干货</span></div>
+            <h3>从分镜到成片：一集动画的 37 个制作环节</h3>
+            <p>制片人第一次公开完整流程图，包含原画交接、色彩指定与配音匹配的时间节点，附可下载的分镜模板说明。</p>
+            <div class="yc-video-meta">
+              <span class="yc-author-name">@绘间工作室</span>
+              <span>播放 28.7万 · 点赞 2.4万</span>
+            </div>
+            <div class="yc-video-ops">
+              <button class="yc-op yc-like" data-liked="false"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.4A4.1 4.1 0 0 1 12 7.6 4.1 4.1 0 0 1 19 10.6C19 15.4 12 20 12 20z"/></svg><span>点赞</span></button>
+              <button class="yc-op yc-fav" data-faved="false"><svg viewBox="0 0 24 24"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>收藏</span></button>
+              <button class="yc-op yc-share" data-title="从分镜到成片：一集动画的 37 个制作环节"><svg viewBox="0 0 24 24"><path d="M4 12v7h16v-7"/><path d="M12 16V4"/><path d="m8 8 4-4 4 4"/></svg><span>分享</span></button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="yc-video-list">
+        <article class="yc-vl-item">
+          <span class="yc-vl-index">01</span>
+          <div class="yc-vl-main">
+            <h3>《海雾列车》第一季全集：一场关于告别的七站旅程</h3>
+            <p>治愈系 · @潮汐剧社 · 播放 52.3万 · 收藏 1.8万</p>
+          </div>
+          <div class="yc-vl-side">
+            <span class="yc-tag">正版高清</span>
+            <button class="yc-op yc-fav" data-faved="false"><svg viewBox="0 0 24 24"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>收藏</span></button>
+          </div>
+        </article>
+        <article class="yc-vl-item">
+          <span class="yc-vl-index">02</span>
+          <div class="yc-vl-main">
+            <h3>《声之形之后》配乐解析：如何用三个音写出一场雨</h3>
+            <p>深度测评 · @音轨笔记 · 播放 19.6万 · 点赞 1.1万</p>
+          </div>
+          <div class="yc-vl-side">
+            <span class="yc-tag yc-tag-alt">行业观察</span>
+            <button class="yc-op yc-like" data-liked="false"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.4A4.1 4.1 0 0 1 12 7.6 4.1 4.1 0 0 1 19 10.6C19 15.4 12 20 12 20z"/></svg><span>点赞</span></button>
+          </div>
+        </article>
+        <article class="yc-vl-item">
+          <span class="yc-vl-index">03</span>
+          <div class="yc-vl-main">
+            <h3>城市探索：在 Kyoto 动画取景地走完一条 8 公里路线</h3>
+            <p>城市探索 · @慢速旅行者 · 播放 33.8万 · 收藏 9,240</p>
+          </div>
+          <div class="yc-vl-side">
+            <span class="yc-tag yc-tag-gold">攻略</span>
+            <button class="yc-op yc-share" data-title="城市探索：动画取景地 8 公里路线"><svg viewBox="0 0 24 24"><path d="M4 12v7h16v-7"/><path d="M12 16V4"/><path d="m8 8 4-4 4 4"/></svg><span>分享</span></button>
+          </div>
+        </article>
+        <article class="yc-vl-item">
+          <span class="yc-vl-index">04</span>
+          <div class="yc-vl-main">
+            <h3>新人动画挑战赛优秀作品集：12 支一分钟内的惊喜</h3>
+            <p>比赛 · @社区编辑部 · 播放 24.2万 · 投票进行中</p>
+          </div>
+          <div class="yc-vl-side">
+            <span class="yc-tag">挑战</span>
+            <button class="yc-op yc-fav" data-faved="false"><svg viewBox="0 0 24 24"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>收藏</span></button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= S4 专题企划 ================= -->
+  <section class="yc-section" id="special">
+    <div class="yc-wrap">
+      <div class="yc-section-head">
+        <span class="yc-eyebrow">专题企划 · 品牌故事</span>
+        <h2>不止于观看，我们围绕每部作品做企划</h2>
+        <p>从单一剧集延展到访谈、解析与共创，溢出樱花动漫用专题把内容做成可参与的故事。</p>
+      </div>
+
+      <div class="yc-special">
+        <div class="yc-special-hero">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 420'%3E%3Cdefs%3E%3ClinearGradient id='sp' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fdeaf1'/%3E%3Cstop offset='.6' stop-color='%23e8b4c8'/%3E%3Cstop offset='1' stop-color='%238e7aa8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='420' fill='url(%23sp)'/%3E%3Cg opacity='.5' fill='%23fff'%3E%3Cpath d='M120 90 q30 -34 56 -6 q-22 34 -56 6z'/%3E%3Cpath d='M500 300 q34 -30 58 -2 q-24 32 -58 2z'/%3E%3C/g%3E%3Crect x='70' y='150' width='210' height='150' rx='10' fill='%23fff' opacity='.82'/%3E%3Crect x='92' y='176' width='166' height='84' rx='6' fill='%23c98aa8'/%3E%3Crect x='330' y='110' width='240' height='230' rx='12' fill='%23fff' opacity='.9'/%3E%3Crect x='356' y='140' width='188' height='22' rx='6' fill='%23e0608a' opacity='.8'/%3E%3Crect x='356' y='176' width='140' height='12' rx='6' fill='%23d7c4d6'/%3E%3Crect x='356' y='200' width='170' height='12' rx='6' fill='%23d7c4d6'/%3E%3Crect x='356' y='224' width='120' height='12' rx='6' fill='%23d7c4d6'/%3E%3Ccircle cx='420' cy='296' r='34' fill='%23e0608a' opacity='.7'/%3E%3Cpath d='M406 296 l12 12 20 -22' stroke='%23fff' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" alt="《樱花落处》第二季专题企划页面构图：画稿与影片并列展示" width="640" height="420">
+          <div class="yc-special-hero-body">
+            <span class="yc-status">更新中 · 已上线 9 话</span>
+            <h3>专题：樱花落处 · 春日归途企划</h3>
+            <p style="font-size:14px;color:var(--yc-ink-soft);">围绕第二季主线，我们同期推出导演访谈、分镜手稿展与配乐解读三条内容线。观众可以在专题页看到同一场戏的四种表达，也能参与「最难忘一帧」投票。</p>
+            <ul class="yc-special-episodes">
+              <li><b>访谈</b>导演对谈：如何拍一场没有台词的告别</li>
+              <li><b>手稿</b>第 9 话分镜原稿 42 张首次公开</li>
+              <li><b>共创</b>春日归途同人短篇征集中，12 月 10 日截止</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="yc-special-row">
+          <div class="yc-special-mini">
+            <span class="yc-tag yc-tag-alt">冬番前瞻</span>
+            <h3>冬季新番抢先看：六部值得预约的作品</h3>
+            <p>编辑部从已确定引进的片单中筛出六部，涵盖科幻、日常与悬疑。</p>
+            <ul>
+              <li>《雾中信号》12 月 3 日首播，双周更</li>
+              <li>《今日面包店》温火慢炖型治愈日常</li>
+              <li>《第七码》悬疑推理，原作累计发行 90 万册</li>
+            </ul>
+          </div>
+          <div class="yc-special-mini">
+            <span class="yc-tag yc-tag-gold">创作扶持</span>
+            <h3>「拾光」创作者扶持计划第 4 期</h3>
+            <p>面向原创动画与视频解说双赛道，提供流量扶持、分镜指导与商业化对接。</p>
+            <ul>
+              <li>报名已于 11 月 18 日开启，投稿入口在站内</li>
+              <li>入选作品可获得首页焦点位与专题页展映</li>
+              <li>往期 36 位创作者中 11 位已转为签约作者</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 品牌深度解析（800+字） ================= -->
+  <section class="yc-section" id="essay">
+    <div class="yc-wrap">
+      <div class="yc-essay">
+        <h2>溢出樱花动漫：一个视频品牌的深度解析</h2>
+        <p class="yc-essay-deck">为什么一家动漫视频平台要坚持「慢一点选片、深一层做内容」？这一节写给第一次认识我们的观众，也写给准备加入社区的创作者。</p>
+        <div class="yc-essay-grid">
+          <div>
+            <h3>从一次「溢出」开始的品牌起点</h3>
+            <p>2021 年春天，几位动画从业者在一个只有几百人的小社群里做了一件小事：把每周看过的短片整理成一份带时间轴的清单，标注哪一帧值得暂停、哪一段配乐值得重听。清单越写越长，评论里开始有人说「你们的推荐像樱花开到溢出」。这个名字就这样留了下来。溢出樱花动漫并不是从资本和流量里长出来的平台，它最早是一条由观众自己写出来的内容线，所以至今我们仍然把「观众真的会重看」当作选片的第一标准，而不是热度榜上的数字。</p>
+            <p>品牌成立后，我们做的第一件事不是扩片库，而是建立一套可追溯的内容档案：每一部收录的作品都要记录版权来源、清晰度标准、字幕团队与剪辑版本。这套流程后来成了我们对外承诺的基础——官网上所有标为高清正版的内容，都可以查到对应的授权信息与更新记录。</p>
+          </div>
+          <div>
+            <h3>平台如何把「正版」做得让人愿意相信</h3>
+            <p>对动漫视频平台而言，正版不只是法律概念，更是体验概念。我们从三个层面落实：第一，画质与音轨统一归档，同一部番剧的不同季度保持一致的码率与字幕样式，避免观众在不同设备上看到割裂的观感；第二，更新节奏公开透明，番剧页会显示下一话的预计上线时间，延期则在公告条说明原因；第三，创作者收益可查询，签约作者能在后台看到自己的作品播放、收藏与分成明细，这种可见性是信任的来源。</p>
+            <p>与此同时，我们也清楚平台不可能一手包办所有内容。因此社区投稿机制被设计成半开放结构：新人可以通过投稿入口上传作品，经过内容审核后进入新声榜；表现稳定的创作者会被邀请进入扶持计划，获得分镜、混音与法务方面的支持。一位做定格动画的作者曾告诉我们，他在这里第一次拿到正规的版权合同，也第一次知道自己作品在哪个城市被最多人观看。</p>
+          </div>
+          <div>
+            <h3>内容生态：让创作者被看见，让观众被尊重</h3>
+            <p>我们内部把内容生态拆成「入口、孵化、放大、沉淀」四个环节。入口是搜索与热门推荐，孵化是投稿与榜单，放大是专题企划与首页焦点，沉淀则是片库与创作者主页的长期积累。四个环节之间用统一的作品编号打通，所以一部短片从新声榜走到年度专题，观众可以一路追到它的每一次版本更新。</p>
+            <p>在运营上，我们坚持两条底线：不制造虚假播放量，不鼓励情绪化的引战标题。热门位由编辑评分与真实完播率共同决定，数据面板对作者开放；评论区的引导语也尽量温和，鼓励写具体感受而不是打分站队。这些细节看起来慢，但它们决定了社区能否持续运营五年、十年。目前站内月度活跃用户超过四百万，其中有多少是被一部冷门短片留下来的，我们无从精确统计，但社区里那些几百字的长评，已经足够说明问题。</p>
+          </div>
+          <div>
+            <h3>社会责任与未来：把动画的美好传得更远</h3>
+            <p>作为一个垂直领域的视频品牌，我们也在尝试承担更多公共角色。自 2023 年起，溢出樱花动漫与多所高校动画社团合作，提供设备借用与线上工作坊；每年举办一次面向青少年的公益短片征集，主题围绕环保、亲情与城市记忆。优秀作品会在专题页长期展映，并免费授权给校园放映使用。这些项目不带来直接商业收益，却是我们理解「用户至上」的方式——先做对社区有价值的事，再谈增长。</p>
+            <p>未来三年，我们计划把高清片库扩充到两万小时以上，同时把创作者扶持从年度项目变成常态化机制，让每一位认真做动画的人都能在官网找到自己的位置。品牌会继续做那个安静但可靠的容器：装下观众的热爱，也装下创作者尚未成形的想象力。感谢你在这里停留，愿意的话，从一段两分钟的短片开始。</p>
+          </div>
+          <div class="yc-essay-quote">「我们不追逐每一次风口，只想把每一部值得重看的作品，稳稳地放在观众面前。」—— 溢出樱花动漫内容团队</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= S5 创作者矩阵 ================= -->
+  <section class="yc-section" id="authors">
+    <div class="yc-wrap">
+      <div class="yc-section-head">
+        <span class="yc-eyebrow">创作者 · 社区的中坚</span>
+        <h2>在溢出樱花动漫持续创作的他们</h2>
+        <p>他们有的是独立动画人，有的是深度解说作者，也有专注幕后记录的团队。点击可查看简介与代表作品。</p>
+      </div>
+
+      <div class="yc-author-grid">
+        <article class="yc-author">
+          <div class="yc-avatar yc-avatar-1">樱</div>
+          <div class="yc-author-info">
+            <h3>樱井拾光<span class="yc-author-role">签约创作者</span></h3>
+            <div class="yc-author-stats"><span>作品 <b>46</b></span><span>粉丝 <b>38.2万</b></span></div>
+            <p>原创动画导演，擅长用静帧与留白讲离别。毕业于动画专业，曾参与两部剧场版的中期制作。《樱花落处》是其个人系列代表作，坚持手绘分镜，画面偏爱黄昏与逆光。</p>
+            <a class="yc-link-more" href="#videos">查看作品 →</a>
+          </div>
+        </article>
+
+        <article class="yc-author">
+          <div class="yc-avatar yc-avatar-2">零</div>
+          <div class="yc-author-info">
+            <h3>零号放映室<span class="yc-author-role">原创团队</span></h3>
+            <div class="yc-author-stats"><span>作品 <b>21</b></span><span>粉丝 <b>24.6万</b></span></div>
+            <p>四人组成的独立动画小队，专注于低成本高完成度的科幻短片。代表作《零点之后》以三次停电串起城市群像，被多家影展收录。团队分工明确，擅长用色彩变化表现时间跨度。</p>
+            <a class="yc-link-more" href="#videos">查看作品 →</a>
+          </div>
+        </article>
+
+        <article class="yc-author">
+          <div class="yc-avatar yc-avatar-3">音</div>
+          <div class="yc-author-info">
+            <h3>音轨笔记<span class="yc-author-role">深度解说</span></h3>
+            <div class="yc-author-stats"><span>作品 <b>132</b></span><span>粉丝 <b>52.9万</b></span></div>
+            <p>影视配乐解析作者，擅长把复杂的编曲拆成普通人能听懂的语言。每期视频附带乐谱片段与音轨对照，被不少音乐院校学生当作课外补充材料。坚持一年更新 40 期以上。</p>
+            <a class="yc-link-more" href="#videos">查看作品 →</a>
+          </div>
+        </article>
+
+        <article class="yc-author">
+          <div class="yc-avatar yc-avatar-4">绘</div>
+          <div class="yc-author-info">
+            <h3>绘间工作室<span class="yc-author-role">幕后记录</span></h3>
+            <div class="yc-author-stats"><span>作品 <b>58</b></span><span>粉丝 <b>16.4万</b></span></div>
+            <p>专门记录动画制作流程的工作室，从原画、上色到后期合成都有完整拍摄。他们的视频常被新人当作入门教材，也促成过一次跨团队的联合制作。坚持真实呈现行业日常。</p>
+            <a class="yc-link-more" href="#videos">查看作品 →</a>
+          </div>
+        </article>
+
+        <article class="yc-author">
+          <div class="yc-avatar yc-avatar-5">潮</div>
+          <div class="yc-author-info">
+            <h3>潮汐剧社<span class="yc-author-role">有声改编</span></h3>
+            <div class="yc-author-stats"><span>作品 <b>74</b></span><span>粉丝 <b>29.7万</b></span></div>
+            <p>以声音演绎见长的创作团体，代表作《海雾列车》以七段声音记忆串联旅程。社团成员多为配音与录音专业出身，注重环境音与呼吸节奏的采集，作品常被用于电台重播。</p>
+            <a class="yc-link-more" href="#videos">查看作品 →</a>
+          </div>
+        </article>
+
+        <article class="yc-author">
+          <div class="yc-avatar yc-avatar-1" style="background:linear-gradient(140deg,#f7c98b,#c05a3f);">慢</div>
+          <div class="yc-author-info">
+            <h3>慢速旅行者<span class="yc-author-role">城市探索</span></h3>
+            <div class="yc-author-stats"><span>作品 <b>63</b></span><span>粉丝 <b>21.3万</b></span></div>
+            <p>以动画取景地为线索的旅行记录者，擅长把城市路线做成可步行攻略。视频节奏舒缓，常附地图与交通提示。近期正在制作国内四城的同人取景地系列，欢迎在评论区投稿线索。</p>
+            <a class="yc-link-more" href="#videos">查看作品 →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= S6 用户口碑 ================= -->
+  <section class="yc-section" id="reviews">
+    <div class="yc-wrap">
+      <div class="yc-section-head">
+        <span class="yc-eyebrow">用户口碑 · 真实反馈</span>
+        <h2>来自观众的短评与长评</h2>
+        <p>这些评价来自站内评论区与年度问卷，我们保留原始语气，也保留不同维度的声音。</p>
+      </div>
+
+      <div class="yc-review-stats">
+        <div class="yc-score">
+          <b>9.6</b>
+          <small>综合口碑评分</small>
+          <div class="yc-score-stars">★★★★★</div>
+        </div>
+        <div>
+          <div class="yc-bar-row"><span>画质</span><div class="yc-bar"><i style="width:96%"></i></div><span>96%</span></div>
+          <div class="yc-bar-row"><span>片库</span><div class="yc-bar"><i style="width:91%"></i></div><span>91%</span></div>
+          <div class="yc-bar-row"><span>创作者</span><div class="yc-bar"><i style="width:94%"></i></div><span>94%</span></div>
+          <div class="yc-bar-row"><span>社区氛围</span><div class="yc-bar"><i style="width:93%"></i></div><span>93%</span></div>
+        </div>
+      </div>
+
+      <div class="yc-review-list">
+        <div class="yc-review-quote">
+          <p>追《樱花落处》追了整整两年，最打动我的不是主线，而是第二季第 9 话里那段两分钟的无台词镜头。看到官网上标注这一话是导演亲自参与分镜，才明白为什么细节这么扎实。希望专题页的手稿展能早一点开放。</p>
+          <footer><span class="yc-avatar yc-avatar-1">林</span><b>林间小满</b><span>· 追番 4 年 · 长评</span></footer>
+        </div>
+        <div class="yc-review-cols">
+          <div class="yc-review-quote">
+            <p>作为一个做定格动画的新人，投稿第三周就收到了编辑的修改建议，很意外。建议很具体，连镜头节奏都给了参考。</p>
+            <footer><span class="yc-avatar yc-avatar-3">阿</span><b>阿纸</b><span>· 新人创作者</span></footer>
+          </div>
+          <div class="yc-review-quote">
+            <p>画质稳定，字幕组翻译认真，术语有注释。就是希望移动端缓存能做得更快一些。</p>
+            <footer><span class="yc-avatar yc-avatar-5">M</span><b>Mayo_07</b><span>· 移动端用户</span></footer>
+          </div>
+          <div class="yc-review-quote">
+            <p>音轨笔记的配乐解析我几乎每期都看，讲得比很多课程清楚。希望能出一期专门讲环境音制作的。</p>
+            <footer><span class="yc-avatar yc-avatar-2">周</span><b>周迦南</b><span>· 音乐院校学生</span></footer>
+          </div>
+          <div class="yc-review-quote">
+            <p>线下放映活动参加过两次，组织得挺有序，放映后还有创作者交流。带小朋友去也很合适。</p>
+            <footer><span class="yc-avatar yc-avatar-4">陈</span><b>陈女士</b><span>· 亲子用户</span></footer>
+          </div>
+        </div>
+        <div class="yc-review-quote">
+          <p>从内容规模看，溢出樱花动漫还不算特别大的平台，但它的选片品味和专题策划让我愿意长期留下。很多冷门但优秀的短片，是在这里第一次看到的。这种「有人替你认真挑过」的感觉，在现在的视频网站上越来越稀缺了。如果后续能把创作者收益明细做得更透明，会更让人放心。</p>
+          <footer><span class="yc-avatar yc-avatar-3">沈</span><b>沈一叶</b><span>· 社区资深用户 · 长评</span></footer>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= S7 辅助区：企业动态 + 合作 + FAQ ================= -->
+  <section class="yc-section" id="aux">
+    <div class="yc-wrap">
+      <div class="yc-section-head">
+        <span class="yc-eyebrow">企业动态 · 合作 · 帮助</span>
+        <h2>关于溢出樱花动漫，你可能还想知道</h2>
+        <p>品牌官方动态、合作信息与常见问题都在这里集中发布，保证信息可查、口径一致。</p>
+      </div>
+
+      <div class="yc-aux-grid">
+        <div class="yc-panel">
+          <h3>企业动态</h3>
+          <ul class="yc-news">
+            <li>
+              <time>2026.11.21</time>
+              <div><b>冬季新番引进片单正式公布</b><span>共 6 部作品确认上线，其中 4 部同步更新，全部提供高清正版字幕。</span></div>
+            </li>
+            <li>
+              <time>2026.11.18</time>
+              <div><b>「拾光」创作者扶持计划第 4 期开放报名</b><span>面向原创动画与深度解说双赛道，报名入口见站内投稿通道。</span></div>
+            </li>
+            <li>
+              <time>2026.11.12</time>
+              <div><b>播放器性能升级完成</b><span>移动端首帧加载速度平均提升 32%，并新增画质记忆功能。</span></div>
+            </li>
+            <li>
+              <time>2026.11.05</time>
+              <div><b>年度社区创作者大会定档</b><span>12 月 20 日线上举办，议程包含创作方法论与商业合作专场。</span></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="yc-panel">
+          <h3>合作品牌与伙伴</h3>
+          <div class="yc-partners">
+            <div class="yc-partner">青樱文化<small>内容联合出品</small></div>
+            <div class="yc-partner">绘间设备<small>创作工具支持</small></div>
+            <div class="yc-partner">潮汐声工坊<small>配音与音效合作</small></div>
+            <div class="yc-partner">拾光计划<small>创作者扶持共建</small></div>
+            <div class="yc-partner">城市影像馆<small>线下放映合作</small></div>
+            <div class="yc-partner">星河出版<small>原作版权合作</small></div>
+          </div>
+          <p style="font-size:12.5px;color:#9a8fa2;margin:14px 0 0;">合作咨询请通过站内投稿通道备注「商务」，我们会在 3 个工作日内回复。</p>
+        </div>
+      </div>
+
+      <div class="yc-panel" style="margin-top:24px;">
+        <h3>常见问题</h3>
+        <div class="yc-faq">
+          <details open>
+            <summary>溢出樱花动漫的内容都是正版授权吗？</summary>
+            <p>站内标注「高清正版」的作品均已取得相应授权，作品详情页可查看版权来源与字幕版本信息。原创短片则由创作者本人授权发布，版权归属仍属于作者。</p>
+          </details>
+          <details>
+            <summary>新人如何投稿自己的动画作品？</summary>
+            <p>点击页头或首屏的「投稿入口」按钮，填写作品信息与联系方式即可。视频建议 1080P 以上、时长不超过 30 分钟，我们会在 5 个工作日内给出审核反馈。</p>
+          </details>
+          <details>
+            <summary>创作者扶持计划有门槛吗？</summary>
+            <p>没有硬性粉丝门槛，主要看作品完成度与更新稳定性。入选后可获得流量扶持、制作指导与商业对接，具体权益以当期计划公告为准。</p>
+          </details>
+          <details>
+            <summary>为什么有些番剧的更新时间和公告不一致？</summary>
+            <p>番剧更新受版权方送审与字幕制作进度影响，如遇延期，我们会在页面顶部公告条说明原因，并同步更新详情页的预计上线时间。</p>
+          </details>
+          <details>
+            <summary>可以申请举办线下放映或校园放映吗？</summary>
+            <p>可以。我们与多家城市影像馆、高校动画社团保持合作，公益放映可免费授权片单。请在投稿通道选择「放映申请」，并说明场地与场次安排。</p>
+          </details>
+          <details>
+            <summary>遇到盗版搬运或侵权内容如何反馈？</summary>
+            <p>每条内容页都有举报入口，选择「侵权投诉」并附上权属证明即可。平台承诺在 48 小时内响应，核实后下架处理。</p>
+          </details>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="yc-cta">
+        <div>
+          <h2>把作品放进樱花里，让更多人看见</h2>
+          <p>无论你是独立动画人、配音社团还是深度解说作者，溢出樱花动漫都欢迎你上传作品。官方审核、正版保障、专题推荐，我们陪你一起成长。</p>
+        </div>
+        <div class="yc-cta-actions">
+          <button class="yc-btn yc-btn-primary" data-modal="submit">立即投稿</button>
+          <button class="yc-btn yc-btn-ghost" data-modal="contact">联系编辑部</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= S8 页脚 ================= -->
+<footer class="yc-footer">
+  <div class="yc-wrap">
+    <div class="yc-footer-grid">
+      <div>
+        <div class="yc-footer-brand"><span class="yc-logo-mark">樱</span>溢出樱花动漫</div>
+        <p>溢出樱花动漫官方网站，深耕二次元视频内容领域，提供高清正版番剧、原创动画短片与创作者社区服务。持续运营，品质优先，陪伴每一位热爱动画的人。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#videos">热门视频</a></li>
+          <li><a href="#special">专题企划</a></li>
+          <li><a href="#essay">品牌解析</a></li>
+          <li><a href="#authors">创作者名录</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>官方通道</h4>
+        <ul>
+          <li><a href="#aux">企业动态</a></li>
+          <li><a href="#aux">合作咨询</a></li>
+          <li><a href="#aux" data-modal="submit">投稿入口</a></li>
+          <li><a href="#aux" data-modal="contact">联系编辑部</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>服务与规范</h4>
+        <ul>
+          <li><a href="#aux">常见问题</a></li>
+          <li><a href="#aux">版权说明</a></li>
+          <li><a href="#aux">社区公约</a></li>
+          <li><a href="#aux">举报与反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="yc-footer-bottom">
+      <span>© 2021–2026 溢出樱花动漫 官方网站 · 版权所有 · 持续运营中</span>
+      <span>备案号：樱ICP备 2021 0688 号 · 高清正版内容平台</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= 弹窗 / Toast / 回顶 ================= -->
+<div class="yc-modal-mask" id="ycModalMask" role="dialog" aria-modal="true">
+  <div class="yc-modal" id="ycModal">
+    <button class="yc-modal-close" id="ycModalClose" aria-label="关闭">×</button>
+    <h3 id="ycModalTitle">投稿入口</h3>
+    <div id="ycModalBody"></div>
+  </div>
+</div>
+<div class="yc-toast" id="ycToast"></div>
+<button class="yc-top" id="ycTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- Toast ---------- */
+  var toastEl = document.getElementById('ycToast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('yc-on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('yc-on'); }, 2200);
+  }
+
+  /* ---------- 移动端导航折叠 ---------- */
+  var burger = document.getElementById('ycBurger');
+  var nav = document.getElementById('ycNav');
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('yc-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      nav.classList.remove('yc-open');
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+
+  /* ---------- 搜索提示/筛选反馈 ---------- */
+  var searchInput = document.getElementById('ycSearch');
+  var searchHint = document.getElementById('ycSearchHint');
+  var searchPool = [
+    '《樱花落处》第二季','《零点之后》原创动画','《海雾列车》全集',
+    '分镜制作教程','创作者扶持计划','冬季新番片单','音轨解析','城市取景地攻略',
+    '新人动画挑战赛','定格动画投稿','专题企划','导演访谈'
+  ];
+  function renderHint(kw){
+    kw = (kw || '').trim();
+    if(!kw){
+      searchHint.classList.remove('yc-on');
+      searchHint.innerHTML = '';
+      return;
+    }
+    var hits = searchPool.filter(function(x){ return x.indexOf(kw) > -1; });
+    if(hits.length === 0){ hits = searchPool.slice(0,3); }
+    searchHint.innerHTML = '<b>“' + escapeHtml(kw) + '” 相关结果 ' + hits.length + ' 条</b>' +
+      hits.slice(0,5).map(function(x){ return '<span>' + escapeHtml(x) + '</span>'; }).join('');
+    searchHint.classList.add('yc-on');
+  }
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  searchInput.addEventListener('input', function(){ renderHint(this.value); });
+  searchInput.addEventListener('focus', function(){ if(this.value) renderHint(this.value); });
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter' && this.value.trim()){
+      e.preventDefault();
+      toast('已按「' + this.value.trim() + '」为你检索站内内容');
+      searchHint.classList.remove('yc-on');
+    }
+  });
+  searchHint.addEventListener('click', function(e){
+    if(e.target.tagName === 'SPAN'){
+      searchInput.value = e.target.textContent;
+      searchHint.classList.remove('yc-on');
+      toast('已填入关键词：' + e.target.textContent);
+    }
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.yc-search')) searchHint.classList.remove('yc-on');
+  });
+
+  /* ---------- 点赞 +1/-1 ---------- */
+  document.querySelectorAll('.yc-like').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var liked = btn.getAttribute('data-liked') === 'true';
+      var label = btn.querySelector('span');
+      var n = parseInt(label.textContent,10) || 0;
+      if(!liked){
+        btn.setAttribute('data-liked','true');
+        btn.classList.add('yc-liked');
+        label.textContent = '已赞';
+        toast('感谢点赞，已记入作品热度');
+      }else{
+        btn.setAttribute('data-liked','false');
+        btn.classList.remove('yc-liked');
+        label.textContent = '点赞';
+        toast('已取消点赞');
+      }
+    });
+  });
+
+  /* ---------- 收藏切换 ---------- */
+  document.querySelectorAll('.yc-fav').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var faved = btn.getAttribute('data-faved') === 'true';
+      btn.setAttribute('data-faved', faved ? 'false' : 'true');
+      btn.classList.toggle('yc-liked', !faved);
+      btn.querySelector('span').textContent = faved ? '收藏' : '已收藏';
+      toast(faved ? '已取消收藏' : '已加入收藏夹');
+    });
+  });
+
+  /* ---------- 分享：复制链接 + Toast ---------- */
+  document.querySelectorAll('.yc-share').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var title = btn.getAttribute('data-title') || '溢出樱花动漫';
+      var shareText = title + ' —— 溢出樱花动漫官方网站推荐内容';
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(shareText).then(function(){
+          toast('分享文案已复制，可粘贴到微信 / 微博');
+        }).catch(function(){
+          toast('分享文案：' + shareText);
+        });
+      }else{
+        toast('分享文案：' + shareText);
+      }
+    });
+  });
+
+  /* ---------- 弹窗通用 ---------- */
+  var mask = document.getElementById('ycModalMask');
+  var modalTitle = document.getElementById('ycModalTitle');
+  var modalBody = document.getElementById('ycModalBody');
+  var lastFocus = null;
+
+  function openModal(title, html){
+    lastFocus = document.activeElement;
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    mask.classList.add('yc-on');
+    document.body.style.overflow = 'hidden';
+    var firstField = modalBody.querySelector('input,textarea,select');
+    if(firstField) setTimeout(function(){ firstField.focus(); }, 60);
+  }
+  function closeModal(){
+    mask.classList.remove('yc-on');
+    document.body.style.overflow = '';
+    if(lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  document.getElementById('ycModalClose').addEventListener('click', closeModal);
+  mask.addEventListener('click', function(e){ if(e.target === mask) closeModal(); });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && mask.classList.contains('yc-on')) closeModal();
+  });
+
+  var submitFormHtml =
+    '<p>填写作品信息即可提交。审核结果将通过站内消息反馈，一般 5 个工作日内回复。</p>' +
+    '<form id="ycSubmitForm">' +
+      '<div class="yc-field"><label for="ycF1">作品标题</label><input id="ycF1" name="title" placeholder="例如：《樱花落处》第 9 话" required></div>' +
+      '<div class="yc-field"><label for="ycF2">作品类型</label>' +
+        '<select id="ycF2" name="type"><option>原创动画短片</option><option>番剧解说 / 深度测评</option><option>创作幕后 / 教程</option><option>城市探索 / 生活记录</option><option>其他</option></select></div>' +
+      '<div class="yc-field"><label for="ycF3">联系方式</label><input id="ycF3" name="contact" placeholder="邮箱或站内昵称" required></div>' +
+      '<div class="yc-field"><label for="ycF4">作品简介</label><textarea id="ycF4" rows="3" placeholder="简单说明作品内容、时长与制作周期"></textarea></div>' +
+      '<button type="submit" class="yc-btn yc-btn-primary" style="width:100%;">提交审核</button>' +
+    '</form>';
+
+  var contactHtml =
+    '<p>合作咨询、放映申请与内容反馈，都可以通过以下方式联系编辑部。</p>' +
+    '<ul style="list-style:none;padding:0;margin:0 0 16px;">' +
+      '<li style="font-size:14px;padding:8px 0;border-bottom:1px dashed #e9d9e1;">商务合作：<b>hello@sakura-overflow.example</b></li>' +
+      '<li style="font-size:14px;padding:8px 0;border-bottom:1px dashed #e9d9e1;">创作者服务：<b>creator@sakura-overflow.example</b></li>' +
+      '<li style="font-size:14px;padding:8px 0;">工作时段：周一至周五 10:00–19:00</li>' +
+    '</ul>' +
+    '<p style="font-size:13px;color:#8b7f93;">我们承诺 3 个工作日内回复，媒体采访请在标题注明「采访」。</p>' +
+    '<button class="yc-btn yc-btn-primary" id="ycCopyMail" style="width:100%;">复制创作者服务邮箱</button>';
+
+  document.querySelectorAll('[data-modal]').forEach(function(el){
+    el.addEventListener('click', function(e){
+      e.preventDefault();
+      var type = el.getAttribute('data-modal');
+      if(type === 'submit'){ openModal('投稿入口', submitFormHtml); }
+      else if(type === 'contact'){ openModal('联系编辑部', contactHtml); }
+    });
+  });
+
+  document.addEventListener('submit', function(e){
+    if(e.target.id === 'ycSubmitForm'){
+      e.preventDefault();
+      closeModal();
+      toast('作品已提交，我们会在 5 个工作日内回复');
+    }
+  });
+  document.addEventListener('click', function(e){
+    if(e.target.id === 'ycCopyMail'){
+      var mail = 'creator@sakura-overflow.example';
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(mail).then(function(){ toast('邮箱已复制'); }).catch(function(){ toast('邮箱：' + mail); });
+      }else{
+        toast('邮箱：' + mail);
+      }
+    }
+  });
+
+  /* ---------- 数据数字滚动 ---------- */
+  var counted = false;
+  function runCount(){
+    if(counted) return;
+    counted = true;
+    document.querySelectorAll('[data-count]').forEach(function(el){
+      var target = parseInt(el.getAttribute('data-count'),10);
+      var suffix = el.querySelector('i') ? el.querySelector('i').outerHTML : '';
+      var start = null, dur = 1100;
+      function step(ts){
+        if(!start) start = ts;
+        var p = Math.min((ts - start)/dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        var val = Math.round(target * eased);
+        el.innerHTML = val.toLocaleString('en-US') + suffix;
+        if(p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting) runCount(); });
+    }, {threshold:.3});
+    var statsEl = document.querySelector('.yc-hero-stats');
+    if(statsEl) io.observe(statsEl);
+  }else{
+    runCount();
+  }
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById('ycTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 560) topBtn.classList.add('yc-on');
+    else topBtn.classList.remove('yc-on');
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* ---------- 页内锚点平滑跳转（已由 CSS scroll-padding 处理偏移） ---------- */
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href');
+      if(id.length < 2) return;
+      var target = document.querySelector(id);
+      if(target){
+        e.preventDefault();
+        target.scrollIntoView({behavior:'smooth', block:'start'});
+        history.replaceState(null, '', id);
+      }
+    });
+  });
+})();
+</script>
+</body>
+          </html>
